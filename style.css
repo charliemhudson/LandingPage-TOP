@@ -1,20 +1,173 @@
 body {
   display: flex;
   flex-direction: column;
-  padding-left: 32px;
-  padding-right: 32px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > * {
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   gap: 10px;
-  margin: 0;
   padding: 0;
 }
 
 .nav-links {
   display: flex;
   gap: 10px;
+}
+
+.header,
+.footer {
+  background-color: #1f2937;
+  color: white;
+}
+.header-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.sign-up-card > * {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.sign-up-card-title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+button {
+  font-weight: bold;
+  text-align: center;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+.sign-up-card-button {
+  background-color: #3882f6;
+  color: white;
+}
+
+li,
+.sign-up-card-info {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-banner {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-banner > * {
+  align-items: center;
+  flex: 1;
+}
+
+.header-banner > img {
+  background-color: grey;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-section > p {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1f2937;
+}
+
+.info-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-card > * {
+  flex: 1;
+  text-align: center;
+}
+
+.info-card > img {
+  flex-basis: 50px;
+  min-height: 200px;
+  border-radius: 16px;
+  border-color: #3882f6;
+  border-style: solid;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+}
+
+.quote-body {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+}
+
+.quote-footer {
+  text-align: right;
+}
+
+.call-to-action-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background-color: #3882f6;
+}
+
+.call-to-action-info > * {
+  color: #e5e7eb;
+  margin: 10px;
+}
+
+.call-to-action-info > p {
+  text-align: left;
+}
+
+.call-to-action-section > button {
+  border-width: 1px;
+  border-style: solid;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-color: #e5e7eb;
+}
+
+.footer {
+  text-align: center;
+}
+
+.call-to-action-heading {
+  font-weight: bold;
+  font-size: 24px;
 }
