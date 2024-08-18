@@ -98,22 +98,24 @@ li,
 
 .info-cards {
   display: flex;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .info-card {
+  flex: 0 1;
   display: flex;
   flex-direction: column;
 }
 
 .info-card > * {
-  flex: 1;
   text-align: center;
 }
 
 .info-card > img {
-  flex-basis: 50px;
-  min-height: 200px;
+  min-width: 180px;
+  min-height: 180px;
   border-radius: 16px;
   border-color: #3882f6;
   border-style: solid;
